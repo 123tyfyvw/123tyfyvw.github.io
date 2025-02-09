@@ -1,56 +1,62 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<style>
-h1{text-align:center}
-h2{text-align:center}
-h3{text-align:center}
-p{text-align:center}	
- body {
-   background:url("img.jpg")  no-repeat center center; 
-   background-size:cover;
-   background-attachment:fixed; 
-   background-color:#CCCCCC;
-}
-
-div.transbox
-{
-  position: absolute;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  background-color:#ffffff;
-  border:1px solid black;
-  opacity:0.6;
-  filter:alpha(opacity=60);
-}
-div.transbox p
-{
-  margin:30px 40px;
-  font-weight:bold;
-  color:#000000;
-}</style>
-</head>
- 
-<body>
- 
-<div class="background">
-<div class="transbox">
-<p>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>导航页</title>
-</p><h1>tyfyvw的个人数据站</h1>
-    
-<p><a href="https://www.tyboard.net/forum.php?mod=viewthread&amp;tid=808">TY Board-OLCI SLSTR云图精选/存档</a></p>
-    
-<h2>个人主页</h2>
-<p><a href="https://space.bilibili.com/1678261131">Bilibili</a></p>
-<p><a href="https://www.tyboard.net/home.php?mod=space&amp;uid=179">TY Board</a></p>
-
-<h2>友情链接</h2>
-<p><a href="http://8.153.36.100/">24Olga（JimmyTao10525）的个人网站</a></p>
-
+<style>
+    body {
+        background: url("img.jpg") no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    h1, h2 {
+        margin: 10px 0;
+    }
+    a {
+        display: block;
+        margin: 5px 0;
+        text-decoration: none;
+        color: #007BFF;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        color: #0056b3;
+    }
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>tyfyvw的个人数据站</h1>
+    <h2>精选内容</h2>
+    <p><a href="https://www.tyboard.net/forum.php?mod=viewthread&amp;tid=808">TY Board - OLCI SLSTR 云图精选/存档</a></p>
+    <h2>个人主页</h2>
+    <p><a href="https://space.bilibili.com/1678261131">Bilibili</a></p>
+    <p><a href="https://www.tyboard.net/home.php?mod=space&amp;uid=179">TY Board</a></p>
+    <h2>友情链接</h2>
+    <p><a href="http://8.153.36.100/">24Olga（JimmyTao10525）的个人网站</a></p>
 </div>
-</div>
- 
+</body>
+</html>
 
-</body></html>
