@@ -1,25 +1,12 @@
-<script>
-async function redirect() {
-    const urlA = "http://43.248.3.161:23333/";
-    const urlB = "http://43.248.3.158:33333/";
-
-    try {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 3000);
-
-        await fetch(urlA, {
-            method: "HEAD",
-            mode: "no-cors",
-            signal: controller.signal
-        });
-
-        clearTimeout(timeout);
-        window.location.href = urlA;
-
-    } catch (e) {
-        window.location.href = urlB;
-    }
-}
-
-redirect();
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=http://43.248.3.161:23333/">
+    <script>
+        window.location.replace("http://43.248.3.161:23333/");
+    </script>
+</head>
+<body>
+</body>
+</html>
